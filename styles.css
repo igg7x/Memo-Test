@@ -40,6 +40,7 @@ padding: 0;
     font-family: var(--font-fmly);
     text-shadow: #00005c 1px 0 10px; 
     color: var(--color-tittle);
+    margin-top: 5%;
 }
 .header-container h5{
     font-size: 1.2rem;
