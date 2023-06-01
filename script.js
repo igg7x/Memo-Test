@@ -67,12 +67,14 @@ btnSaveEl.addEventListener("click", () => {
   loadIcons();
   tableroEl.innerHTML = "";
   modalSettingsEl.classList.replace("modal-show", "modal-close");
-  if (checked === "Medium😨") {
+  if (checked === "Medium😨" || checked === "Medio😨") {
+    tableroEl.classList.replace("tablero-hard", "tablero-medium");
     tableroEl.classList.replace("tablero", "tablero-medium");
     icons.push(...iconsMedium);
     levelEl.textContent = "Level : Medium";
-  } else if (checked === "Hard😈") {
+  } else if (checked === "Hard😈" || checked === "Duro😈") {
     levelEl.textContent = "Level : Hard";
+    tableroEl.classList.replace("tablero-medium", "tablero-hard");
     tableroEl.classList.replace("tablero", "tablero-hard");
     icons.push(...iconsMedium);
     icons.push(...iconsHard);

@@ -448,6 +448,13 @@ background-color: var(--card-front);
 
 
 @media screen and ( max-width:530px){
+  .tablero-medium{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    grid-template-rows: repeat(4,1fr);
+    gap: 1rem;
+    place-items: center;
+   }
   .tablero-hard{
     display: grid;
     grid-template-columns: repeat(5,1fr);
