@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>MEMO-test</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link
+      rel="shortcut icon"
+      href="/images/faviconImg.png"
+      type="image/x-icon" />
+    <script
+      src="https://kit.fontawesome.com/b223d2f563.js"
+      crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/js-confetti@latest/dist/js-confetti.browser.js"></script>
+  </head>
+  <body>
+    <header class="header-container">
+      <h2>
+        <i <i class="fa-solid fa-brain fa-bounce fa-lg"></i> Memo-Test
+        <i class="fa-solid fa-brain fa-bounce fa-lg"></i>
+      </h2>
+      <h5>Find all matching pairs of cards.</h5>
+    </header>
+    <main class="main-container">
+      <h3 id="timer"><time></time></h3>
+      <div class="tablero" id="tablero"></div>
+      <div class="buttons">
+        <div class="button-Newgame">
+          <button id="Settings"><i class="fa-solid fa-gear fa-2xl"></i></button>
+        </div>
+        <div class="pairFound-container">
+          <h5 id="pairFound"></h5>
+        </div>
+        <div class="button-Newgame">
+          <button id="NewGame">New Game</button>
+          <h5 id="levelSelected">Level : Easy</h5>
+        </div>
+      </div>
+    </main>
+    <div id="modalSettings" class="modal-close">
+      <div class="subModal">
+        <label class="switch">
+          <input type="checkbox" />
+          <span class="slider"></span>
+        </label>
+        <a href="#" id="modalSettings-close" class="icon"
+          ><i class="fa-sharp fa-solid fa-xmark fa-2xl"></i
+        ></a>
+        <h2>SETTINGS</h2>
+        <h5>Select one Level..</h5>
+        <div class="container">
+          <form>
+            <label>
+              <input class="level" type="radio" name="radio" checked="" />
+              <span>Easy😎</span>
+            </label>
+            <label>
+              <input class="level" type="radio" name="radio" />
+              <span>Medium😨</span>
+            </label>
+            <label>
+              <input class="level" type="radio" name="radio" />
+              <span>Hard😈</span>
+            </label>
+          </form>
+        </div>
+        <button id="Save">Save</button>
+      </div>
+    </div>
+    <div id="modal" class="modal-close">
+      <div class="subModal">
+        <a href="#" id="modal-close" class="icon"
+          ><i class="fa-sharp fa-solid fa-xmark fa-2xl"></i
+        ></a>
+        <h2>GAME OVER!</h2>
+        <p id="intentos"></p>
+      </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
